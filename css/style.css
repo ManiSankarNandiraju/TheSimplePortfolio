@@ -3001,8 +3001,25 @@ h6 {
   .home_banner_area {
     margin-top: 0; }
 
+  /* Add styles for larger screens (desktop) */
   .home_right_img {
-    display: none; }
+    display: block; /* Ensure the image is displayed as a block element */
+    float: right; /* Float the image to the right side of its container */
+    margin-top: 30px; /* Adjust the top margin for spacing */
+    }
+
+  /* Add styles for smaller screens (mobile) */
+    @media (max-width: 767px) {
+    .home_right_img {
+        float: none; /* Remove float for mobile screens */
+        margin-top: 0; /* Remove top margin for spacing */
+        text-align: center; /* Center the image within its container */
+    }
+    .responsive-image {
+        max-width: 100%; /* Ensure the image does not exceed its container's width */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+  }
 
   /* Footer Area css
   ============================================================================================ */
