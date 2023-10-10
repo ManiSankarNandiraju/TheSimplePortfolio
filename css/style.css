@@ -2173,7 +2173,62 @@ h6 {
       margin-bottom: 0px; }
     .portfolio_details_inner .portfolio_right_text .list li i {
       color: #f1cd09; }
+	  
+/* Style the slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
 
+/* Style the slideshow images */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.mySlidesGesture {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.mySlidesArm{
+	    display: none;
+    width: 100%;
+    height: auto;
+}
+.mySlidesGM{
+	    display: none;
+    width: 100%;
+    height: auto;
+}
+	
+
+/* Style the navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: -50px;
+}
+
+.next {
+    right: -50px;
+}
+
+/* Style the image count */
+.slide-count {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
 /* End Portfolio Area css
 ============================================================================================ */
 /* Start Testimonial Area css
@@ -2861,5 +2916,6 @@ li{ /*style the li tag*/
 	}
 }
 /*---------------------------------------------------- */
+
 
 /*# sourceMappingURL=style.css.map */
