@@ -1,4 +1,4 @@
-var currentSlideAccident = 1;
+    var currentSlideAccident = 1;
     var totalSlidesAccident = document.getElementsByClassName("mySlides").length;
 
     function plusSlidesAccidentDetection(n) {
@@ -77,11 +77,73 @@ var currentSlideAccident = 1;
         slides[currentSlideGM - 1].style.display = "block";
         document.querySelector(".current-slide-gm").textContent = currentSlideGM;
     }
+		
+	var currentSlideInsta= 1;
+    var totalSlidesInsta= document.getElementsByClassName("mySlidesInsta").length;
+
+    function plusSlidesInsta(n) {
+        showSlideInsta(currentSlideInsta+= n);
+    }
+
+    function showSlideInsta(n) {
+        if (n > totalSlidesInsta) { currentSlideInsta= 1; }
+        if (n < 1) { currentSlideInsta= totalSlidesInsta; }
+
+        var slides = document.getElementsByClassName("mySlidesInsta");
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[currentSlideInsta- 1].style.display = "block";
+        document.querySelector(".current-slide-Insta").textContent = currentSlideInsta;
+    }
+	var currentSlideCollege = 1;
+    var totalSlidesCollege = document.getElementsByClassName("mySlidesCollege").length;
+
+    function plusSlidesCollege(n) {
+        showSlideCollege(currentSlideCollege += n);
+    }
+
+    function showSlideCollege(n) {
+        if (n > totalSlidesCollege) { currentSlideCollege = 1; }
+        if (n < 1) { currentSlideCollege = totalSlidesCollege; }
+
+        var slides = document.getElementsByClassName("mySlidesCollege");
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[currentSlideCollege - 1].style.display = "block";
+        document.querySelector(".current-slide-college").textContent = currentSlideCollege;
+    }
+
+    var currentSlideArt = 1;
+    var totalSlidesArt = document.getElementsByClassName("mySlidesArt").length;
+
+    function plusSlidesArt(n) {
+        showSlideArt(currentSlideArt += n);
+    }
+
+    function showSlideArt(n) {
+        if (n > totalSlidesArt) { currentSlideArt = 1; }
+        if (n < 1) { currentSlideArt = totalSlidesArt; }
+
+        var slides = document.getElementsByClassName("mySlidesArt");
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[currentSlideArt - 1].style.display = "block";
+        document.querySelector(".current-slide-art").textContent = currentSlideArt;
+    }
 
     // Start the slideshows when the page loads
     window.onload = function() {
         showSlideAccident(currentSlideAccident);
         showSlideGesture(currentSlideGesture);
-		showSlideArm(currentSlideArm);
-		showSlideGM(currentSlideGM);
+        showSlideArm(currentSlideArm);
+        showSlideGM(currentSlideGM);
+        showSlideInsta(currentSlideInsta);
+        showSlideCollege(currentSlideCollege);
+        showSlideArt(currentSlideArt); // Corrected function name here
     };

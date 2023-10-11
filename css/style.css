@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   font-family: "Rubik", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   color: #000000; }
 
 .list {
@@ -347,14 +347,9 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
-}
 .home_banner_area {
   z-index: 1;
-  color: #989898; /* Set text color */
-  font-family: 'Rubik', sans-serif; /* Specify the font family */
-  font-size: 16px; /* Set the font size */
-  text-align: center; /* Align the text in the center */
-  padding: 20px; /* Add padding to the element as needed */
+  background: url(../img/banner/home-banner.png) no-repeat top center;
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
@@ -2175,6 +2170,15 @@ h6 {
       color: #f1cd09; }
 	  
 /* Style the slideshow container */
+.mySlides:first-child,
+.mySlidesArt:first-child,
+.mySlidesGesture:first-child,
+.mySlidesArm:first-child,
+.mySlidesGM:first-child,
+.mySlidesInsta:first-child,
+.mySlidesCollege:first-child {
+    display: block;
+}
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -2201,6 +2205,21 @@ h6 {
 	    display: none;
     width: 100%;
     height: auto;
+}
+.mySlidesInsta{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.mySlidesCollege{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.mySlidesArt{
+  display: none;
+  width: 100%;
+  height: auto;
 }
 	
 
@@ -2229,6 +2248,19 @@ h6 {
     transform: translateX(-50%);
     font-size: 16px;
 }
+
+.description-box {
+    background-color: white;
+    padding: 20px; /* Adjust this as needed to control the size of the box */
+    text-align: center;
+}
+
+.description-content {
+    padding: 15px;
+    border: 1px solid #e5e5e5; /* Add a border if desired */
+    border-radius: 5px; /* Add rounded corners if desired */
+}
+
 /* End Portfolio Area css
 ============================================================================================ */
 /* Start Testimonial Area css
@@ -2841,62 +2873,62 @@ li{ /*style the li tag*/
 }
 
 .bar{ /*style the bar*/
-	background-color: #353b48;
+	background-color: #ffffff;
 	display: block;
 	height:10px;
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 3px;
 	overflow: hidden;
-	box-shadow: 0 0 10px #2187e7b3;
+	box-shadow: 0 0 10px #000000b3;
 }
 
 .bar span{ /*style the span tag*/
-	height: 2px;
+	height: 10px;
 	float: left;
-	background-color: #2187e7;
+	background-color: #000000b3;
 }
 
-.html{ /*set skills and animation of html*/
-	width: 80%;
-	animation: html 2s;
+.htmlskill{ /*set skills and animation of html*/
+	width: 60%;
+	animation: htmlskill 2s;
 }
 
-.css{ /*set skills and animation of css*/
-	width: 93%;
-	animation: css 2s;
+.cssskill{ /*set skills and animation of css*/
+	width: 95%;
+	animation: cssskill 2s;
 }
 
-.javascript{ /*set skills and animation of javascript*/
+.javascriptskill{ /*set skills and animation of javascript*/
 	width: 50%;
-	animation: javascript 2s;
+	animation: javascriptskill 2s;
 }
 
-.jquery{ /*set skills and animation of jquery*/
-	width: 30%;
-	animation: jquery 2s;
+.javaskill{ /*set skills and animation of jquery*/
+	width: 85%;
+	animation: javaskill 2s;
 }
 
-@keyframes html{ /*animate html skills*/
+@keyframes htmlskill{ /*animate html skills*/
 	0%{
 		width: 0%;
 	}
 
 	100%{
-		width: 80%;
+		width: 60%;
 	}
 }
 
-@keyframes css{ /*animate css skills*/
+@keyframes cssskill{ /*animate css skills*/
 	0%{
 		width: 0%;
 	}
 
 	100%{
-		width: 93%;
+		width: 95%;
 	}
 }
 
-@keyframes javascript{ /*animate javascript skills*/
+@keyframes javascriptskill{ /*animate javascript skills*/
 	0%{
 		width: 0%;
 	}
@@ -2906,13 +2938,111 @@ li{ /*style the li tag*/
 	}
 }
 
-@keyframes jquery{ /*animate jquery skills*/
+@keyframes javaskill{ /*animate java skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+.springbootskill{ 
+	width: 85%;
+	animation: springbootskill 2s;
+}
+
+@keyframes springbootskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+.graphicdesignskill{ 
+	width: 90%;
+	animation: graphicdesignskill 2s;
+}
+
+@keyframes graphicdesignskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+.pythonskill{ 
+	width: 35%;
+	animation: pythonskill 2s;
+}
+
+@keyframes pythonskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 35%;
+	}
+}
+.phpskill{ 
+	width: 30%;
+	animation: phpskill 2s;
+}
+
+@keyframes phpskill{ 
 	0%{
 		width: 0%;
 	}
 
 	100%{
 		width: 30%;
+	}
+}
+.videoeditingskill{ 
+	width: 80%;
+	animation: videoeditingskill 2s;
+}
+
+@keyframes videoeditingskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+.arduinoskill{ 
+	width: 90%;
+	animation: arduinoskill 2s;
+}
+
+@keyframes arduinoskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+.clanguageskill{ 
+	width: 90%;
+	animation: clanguage 2s;
+}
+
+@keyframes clanguageskill{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
 	}
 }
 /*---------------------------------------------------- */
